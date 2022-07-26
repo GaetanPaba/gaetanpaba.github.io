@@ -1,4 +1,27 @@
-.LinkedIN{
+.gauche{
+    float: left;
+    width: 50%;
+}
+.adresse{
     width: 25px;
     height: 25px;
+}
+.tel{
+    width: 25px;
+    height: 25px;
+}
+
+.LinkedIN{
+    
+    width: 25px;
+    height: 25px;
+}
+.mail {
+    width: 30px;
+    height: 25px;
+}
+
+.droite{
+    float: right;
+    width: 50%;
 }
