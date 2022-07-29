@@ -8,7 +8,8 @@
 }
 
 body {
-	background-color: #f9f9f9;
+	background-image: url(./images/background\ cv.webp);
+
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	margin: 0;
@@ -31,7 +32,7 @@ nav {
 }
 
 .logo a {
-	color: #236161;
+	color: blue;
 	letter-spacing: 2px;
 	font-size: 1.25rem;
 }
@@ -71,7 +72,7 @@ nav li {
 
 a {
 	text-decoration: none;
-	color: #447979;
+	color:blue;
 	font-weight: 500;
 }
 
@@ -83,7 +84,7 @@ nav a:before {
 }
 
 nav a:hover {
-	color: #72a7a7;
+	color:blue;
 }
 
 nav ul li a {
@@ -99,7 +100,7 @@ nav ul li a:after {
 	width: 0%;
 	content: ".";
 	color: transparent;
-	background: #72a7a7;
+	background: rgb(87, 87, 246);
 	height: 2px;
 	pointer-events: none;
 }
@@ -116,7 +117,7 @@ nav ul li a:hover:after {
 .burger div {
 	width: 25px;
 	height: 3px;
-	background-color: #447979;
+	background-color: #246b6b;
 	margin: 5px;
 	border-radius: 100px;
 	transition: all 0.5s ease;
@@ -360,7 +361,7 @@ main {
 .s6,
 .s7 {
 	min-height: 93vh;
-	padding-top: 7vh;
+	padding-top: 23vh;
 }
 
 /* SECTIONS 2 & 3 FORMATION & EXPERIENCES*/
@@ -429,7 +430,7 @@ main {
 }
 
 .content p {
-	color: black;
+	color: rgb(254, 253, 253);
 	font-size: 1rem;
 	line-height: 22px;
 	font-weight: 500;
@@ -577,8 +578,8 @@ strong {
 	}
 
 	.content {
-		background: #f9f9f9;
-		box-shadow: 5px 5px 10px #e0e0e0, -5px -5px 10px #ffffff;
+		background: #c7a9ff;
+		box-shadow: 5px 5px 10px #e0e0e0, -5px -5px 10px #c595fb;
 		border-radius: 15px;
 	}
 
@@ -706,52 +707,37 @@ strong {
 
 /* DEVELOPPEMENT */
 .html {
-	width: 85%;
-}
-
-.css {
 	width: 70%;
 }
 
-.js {
-	width: 50%;
+.css {
+	width: 60%;
 }
 
-.php {
-	width: 30%;
+.js {
+	width: 40%;
 }
 
 .sql {
-	width: 35%;
+	width: 40%;
 }
 
-.cpp {
-	width: 25%;
+.post {
+	width: 40%;
 }
 
 /* SOFTWARE */
-.ps {
-	width: 85%;
-}
 
-.id {
-	width: 50%;
-}
 
-.xd {
-	width: 75%;
-}
-
-.pp {
-	width: 50%;
-}
-
-.lr {
+.git {
 	width: 65%;
 }
 
-.fl {
-	width: 95%;
+.dock {
+	width: 30%;
+}
+.lin {
+	width: 25%;
 }
 
 /* RESPONSIVE SECTION 4 */
@@ -1052,7 +1038,7 @@ strong {
 }
 
 .s6 .title {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .interets {
@@ -1336,92 +1322,8 @@ footer p {
 	background-color: #72a7a7;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* nav {
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 7vh;
-    background-color: white;
-    width: 100%;
-    min-width: 295px;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
-}
-body {
-    background-color: #f9f9f9;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    margin: 0;
-    min-width: 290px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* header{
-    text-align: center;
-    background-image: url(./imagedonnees.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-img.photo{
-    display: block;
-    margin: auto;
-    height: 150px;
-    border-radius: 50%;
-    }
-.deroulant1{
-    border-radius: 30px;
-}
-.dropdowncontacter {
-    background-color:blue;
-    width: 150px; /* Largeur du menu */
-  }
-  .dropdowncontacter,
-  .dropdowncontacter ul {
     /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    
-  }
+
   .dropdowncontacter ul {
     /* Masquage des sous-menu par defaut */
     display: none;
@@ -1477,7 +1379,7 @@ img.photo{
   }
   .dropdowncontacter ul li:hover a {
     color: #f00; /* Couleur du texte des sous-menu au survol */
-  } */
+  } 
 
 
 .adresse{
@@ -1498,10 +1400,6 @@ img.photo{
     width: 30px;
     height: 25px;
 }
-
-.progressbar-wrapper {
-    background-color: blue;
-    color: white;
-    border-radius: 15px;
-    width: 50%;
-  }
+.title{
+	margin-top: 0%;
+}
