@@ -8,12 +8,11 @@
 }
 
 body {
-	background-image: url(./images/background\ cv.webp);
-
+	background-image: url(./images/fondcv2.jfif);
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	margin: 0;
-	min-width: 290px;
+	min-width: 150px;
 }
 
 /* NAVIGATION BAR */
@@ -117,7 +116,7 @@ nav ul li a:hover:after {
 .burger div {
 	width: 25px;
 	height: 3px;
-	background-color: #246b6b;
+	background-color: rgb(6, 6, 101);
 	margin: 5px;
 	border-radius: 100px;
 	transition: all 0.5s ease;
@@ -358,10 +357,9 @@ main {
 .s3,
 .s4,
 .s5,
-.s6,
 .s7 {
-	min-height: 93vh;
-	padding-top: 23vh;
+	min-height: 70vh;
+	padding-top: 30px;
 }
 
 /* SECTIONS 2 & 3 FORMATION & EXPERIENCES*/
@@ -681,7 +679,7 @@ strong {
 
 .s4 .container h4 {
 	font-weight: 500;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .skill:before {
@@ -1030,7 +1028,7 @@ strong {
 	}
 }
 
-/* SECTION 6 CENTRES D'INTÃ‰RÃŠT*/
+/* SECTION 6 CENTRES D'INTERET*/
 
 .s6 .container {
 	display: flex;
@@ -1313,13 +1311,13 @@ footer p {
 }
 
 ::-moz-selection {
-	color: white;
+	color: black;
 	background-color: #72a7a7;
 }
 
 ::selection {
-	color: white;
-	background-color: #72a7a7;
+	color:black;
+	background-color: #140065;
 }
 
     /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
@@ -1357,16 +1355,16 @@ footer p {
   }
   /* Gestion des couleurs */
   .dropdowncontacter li {
-    background-color: rgb(2, 2, 167); /* Couleur d'arriere-plan du menu */
+    background-color: rgb(3, 3, 78); /* Couleur d'arriere-plan du menu */
   }
   .dropdowncontacter li a {
-    color: white; /* Couleur du texte du menu */
+    color: black; /* Couleur du texte du menu */
   }
   .dropdowncontacter li:hover {
     background-color: rgb(2, 2, 167); /* Couleur d'arriere-plan du menu au survol */
   }
   .dropdowncontacter li:hover a {
-    color: white; /* Couleur du texte du menu au survol */
+    color: black; /* Couleur du texte du menu au survol */
   }
   .dropdowncontacter ul li {
     background-color: rgb(2, 2, 167); /* Couleur d'arriere-plan des sous-menu */
@@ -1375,7 +1373,7 @@ footer p {
     background-color: rgb(2, 2, 167); /* Couleur d'arriere-plan des sous-menu au survol */
   }
   .dropdowncontacterul li a {
-    color: white; /* Couleur du texte des sous-menu */
+    color: black; /* Couleur du texte des sous-menu */
   }
   .dropdowncontacter ul li:hover a {
     color: #f00; /* Couleur du texte des sous-menu au survol */
