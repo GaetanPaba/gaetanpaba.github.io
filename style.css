@@ -1,6 +1,4 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
 *,
 *::after,
 *::before {
@@ -9,7 +7,6 @@
 
 body {
 	background-image: url(./images/fondcv2.jfif);
-	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	margin: 0;
 	min-width: 150px;
@@ -144,52 +141,6 @@ nav ul li a:hover:after {
 	user-select: none;
 }
 
-/* RESPONSIVE NAV*/
-@media screen and (max-width: 1080px) {
-	.nav-links {
-		position: fixed;
-		top: 7vh;
-		left: 0px;
-		padding-left: 0;
-		background-color: white;
-		height: 93vh;
-		width: 100vw;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		transform: translateX(-100%);
-		transition: transform 0.5s ease-in;
-		z-index: -1;
-		min-width: 0;
-	}
-
-	.nav-links li {
-		opacity: 0;
-		font-size: 1.1rem;
-		margin-bottom: 7vh;
-		position: relative;
-		top: -5vh;
-	}
-
-	.nav-links a {
-		font-weight: 700;
-	}
-
-	.marge {
-		margin-left: 0;
-	}
-
-	.burger {
-		position: absolute;
-		left: 3vw;
-		display: block;
-		cursor: pointer;
-	}
-
-	nav ul li a:after {
-		display: none;
-	}
-}
 
 /* SLIDE MENU */
 .nav-active {
@@ -203,7 +154,7 @@ main {
 }
 
 .s1 {
-	height: 93vh;
+	height: 50vh;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -222,7 +173,7 @@ main {
 }
 
 .s1 img {
-	border-radius: 100%;
+	border-radius: 30%;
 	height: auto;
 	width: 100%;
 	max-width: 400px;
@@ -247,7 +198,7 @@ main {
 
 .button a,
 .button button {
-	border: solid 3px #447979;
+	border: solid 3px #03c1f5;
 	text-align: center;
 	width: 150px;
 	padding: 10px 15px;
@@ -267,99 +218,16 @@ main {
 	transition: 0.3s ease-in-out;
 }
 
-/* RESPONSIVE SECTION 1*/
-@media screen and (min-width: 426px) {
-	.home-img {
-		max-width: 220px;
-	}
 
-	.home-text h1 {
-		font-size: 1.8rem;
-	}
-
-	.home-text p {
-		font-size: 1.1rem;
-	}
-}
-
-@media screen and (min-width: 600px) {
-	.home-img {
-		max-width: 250px;
-	}
-
-	.home-text h1 {
-		font-size: 2rem;
-	}
-
-	.home-text p {
-		font-size: 1.2rem;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.home-img {
-		max-width: 300px;
-	}
-
-	.home-text h1 {
-		font-size: 2.8rem;
-	}
-
-	.home-text p {
-		font-size: 1.3rem;
-		max-width: 540px;
-		margin-bottom: 30px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.s1 .container {
-		margin-top: 12vh;
-	}
-
-	.home {
-		display: grid;
-		grid-template-columns: auto 500px 5vw 400px auto;
-		grid-auto-flow: column;
-		text-align: left;
-		margin: 0 3vw;
-	}
-
-	.home-text {
-		margin: 0;
-		grid-column: 2/3;
-		grid-row: 1;
-		display: grid;
-		align-self: center;
-		justify-content: center;
-	}
-
-	.home-text h1 {
-		margin-bottom: 5px;
-	}
-
-	.home-img {
-		max-width: 400px;
-		max-height: 400px;
-		grid-column: 4/5;
-		grid-row: 1;
-		justify-content: center;
-		align-self: center;
-	}
-
-	.button {
-		margin: 0;
-	}
-}
 
 /* ALL OTHER SECTIONS */
 .s2,
 .s3,
 .s4,
-.s5,
+.s6,
 .s7 {
-	min-height: 70vh;
-	padding-top: 30px;
+	min-height: 80vh;
+	padding-top: 100px;
 }
 
 /* SECTIONS 2 & 3 FORMATION & EXPERIENCES*/
@@ -576,9 +444,9 @@ strong {
 	}
 
 	.content {
-		background: #c7a9ff;
-		box-shadow: 5px 5px 10px #e0e0e0, -5px -5px 10px #c595fb;
-		border-radius: 15px;
+		background: #03c1f5;
+		box-shadow: -5px -5px 10px #03c1f5;
+		border-radius: 60px;
 	}
 
 	.c1 h3::before,
@@ -597,7 +465,7 @@ strong {
 	}
 }
 
-/* SECTION 4 COMPÃ‰TENCES */
+/* SECTION 4 COMPETENCES */
 .s4 .container {
 	display: grid;
 	grid-template-columns: auto auto 4vw auto auto;
@@ -679,7 +547,7 @@ strong {
 
 .s4 .container h4 {
 	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .skill:before {
@@ -696,7 +564,7 @@ strong {
 .skill-bar {
 	width: 100%;
 	height: 5px;
-	background: #447979;
+	background:#03c1f5;
 	border-radius: 200px;
 	display: block;
 	position: relative;
@@ -781,13 +649,6 @@ strong {
 	}
 }
 
-@media screen and (max-width: 320px) {
-	.dev,
-	.soft,
-	.lang {
-		min-width: 250px;
-	}
-}
 
 /* SECTION 5 PROJETS*/
 .s5 .container {
@@ -947,86 +808,7 @@ strong {
 	text-align: center;
 }
 
-/* RESPONSIVE SECTION 5 */
-@media screen and (min-width: 600px) {
-	.projets {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
 
-@media screen and (min-width: 900px) {
-	.projets {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-@media screen and (max-width: 940px) {
-	.modal-content {
-		height: auto;
-		width: 600px;
-		top: 30px;
-	}
-
-	.desc {
-		display: block;
-	}
-
-	.leftModal {
-		padding: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-	}
-
-	.leftModal p {
-		font-size: 0.8rem;
-	}
-
-	.leftModal .button {
-		margin-bottom: 50px;
-	}
-
-	.imgModal {
-		max-width: 450px;
-		margin-bottom: 20px;
-	}
-}
-
-@media screen and (max-width: 426px) {
-	.projets,
-	.interets {
-		margin: 0 10vw;
-	}
-
-	.modal-content {
-		height: auto;
-	}
-
-	.imgModal {
-		display: none;
-	}
-
-	.modal {
-		min-width: 300px;
-	}
-
-	.modal-content {
-		padding: 30px;
-		min-width: 300px;
-	}
-}
-
-@media screen and (max-height: 680px) and (max-width: 940px) {
-	.modal-content {
-		height: 85vh;
-		top: 20px;
-	}
-
-	.imgModal {
-		display: none;
-	}
-}
 
 /* SECTION 6 CENTRES D'INTERET*/
 
@@ -1072,201 +854,10 @@ strong {
 	text-align: center;
 }
 
-/* RESPONSIVE SECTION 6 */
-@media screen and (min-width: 600px) {
-	.interets {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
 
-@media screen and (min-width: 900px) {
-	.interets {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
 
-/* SECTION 7 ME CONTACTER */
-.s7 {
-	position: relative;
-	overflow: hidden;
-}
 
-.s7 .container {
-	display: flex;
-	justify-content: center;
-}
 
-.s7 .title {
-	margin-bottom: 50px;
-}
-
-.contact-form {
-	text-align: center;
-}
-
-.contact-form .name {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 15px;
-}
-
-.mail,
-.sujet {
-	margin-bottom: 15px;
-}
-
-.message {
-	margin-bottom: 30px;
-}
-
-input[name="prenom"],
-input[name="nom"] {
-	width: 240px;
-}
-
-.form-wrapper * {
-	width: 500px;
-}
-
-input,
-textarea {
-	border-radius: 5px;
-	border: 2px solid rgba(114, 167, 167, 0.1);
-	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.02);
-	font-family: "Montserrat", sans-serif;
-	font-size: 1.2rem;
-	padding: 5px;
-	outline: none;
-	color: #236161;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-	color: #72a7a7;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-	color: #72a7a7;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-	color: #72a7a7;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
-	color: #72a7a7;
-}
-
-input::placeholder,
-textarea::placeholder {
-	color: #72a7a7;
-}
-
-input:focus,
-textarea:focus {
-	border: 2px solid #72a7a7;
-	transition: 0.2s ease-in;
-}
-
-textarea {
-	height: 200px;
-	resize: none;
-}
-
-.s7 .button {
-	margin-bottom: 100px;
-}
-
-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-footer div,
-footer p {
-	padding: 5px;
-}
-
-footer img {
-	max-width: 30px;
-}
-
-.img-cv img,
-.img-linkedin img {
-	filter: brightness(100%);
-	transition: ease-out 0.2s;
-}
-
-.img-cv img:hover {
-	filter: brightness(80%);
-	transition: ease-in 0.2s;
-}
-
-.img-linkedin img:hover {
-	filter: brightness(80%);
-	transition: ease-in 0.2s;
-}
-
-footer a {
-	display: flex;
-	align-self: center;
-}
-
-footer p {
-	font-size: 0.8rem;
-	margin: 0 10px;
-}
-
-@media screen and (max-width: 600px) {
-	input[name="prenom"],
-	input[name="nom"] {
-		width: 200px;
-	}
-
-	.form-wrapper * {
-		width: 400px;
-	}
-}
-
-@media screen and (max-width: 470px) {
-	input[name="prenom"],
-	input[name="nom"] {
-		width: 175px;
-	}
-
-	.form-wrapper * {
-		width: 350px;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	input[name="prenom"],
-	input[name="nom"] {
-		width: 150px;
-	}
-
-	.form-wrapper * {
-		width: 300px;
-	}
-}
-
-@media screen and (max-width: 340px) {
-	input[name="prenom"],
-	input[name="nom"] {
-		width: 140px;
-	}
-
-	.form-wrapper * {
-		width: 280px;
-	}
-}
 
 /* ANIMATIONS */
 @-webkit-keyframes navLinkFade {
@@ -1310,79 +901,11 @@ footer p {
 	opacity: 1;
 }
 
-::-moz-selection {
-	color: black;
-	background-color: #72a7a7;
-}
-
-::selection {
-	color:black;
-	background-color: #140065;
-}
-
-    /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
-
-  .dropdowncontacter ul {
-    /* Masquage des sous-menu par defaut */
-    display: none;
-  }
-  .dropdowncontacter li {
-    /* Positionnement relative des elements de menu pour pouvoir positionner les sous-menu correctement en absolu */
-    position: relative;
-  }
-  .dropdowncontacter a {
-    /* On transforme les liens en bloc pour pouvoir les dimensionner */
-    display: block;
-    /* Dimensions des liens */
-    width: 120px;
-    height: 30px;
-    line-height: 30px; /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
-    padding: 3px 10px;
-    text-align: center;
-  }
-  .dropdowncontacter li:hover ul {
-    /* Affichage du soumenu au survol */
-    display: block;
-    /* Positionnement du sous-menu */
-    position: absolute;
-    top: 0px;
-    left: 140px; /* Decalage du sous-menu de la largeur du menu */
-    z-index: 100; /* Gestion de la superposition des sous-menus par rapport au reste de la page */
-  }
-  .dropdowncontacter ul a {
-    /* Changement de l'affichage des liens des sous-menus pour ne pas les afficher en inline-block comme les liens de menu, ils seront donc verticaux */
-    display: block;
-  }
-  /* Gestion des couleurs */
-  .dropdowncontacter li {
-    background-color: rgb(3, 3, 78); /* Couleur d'arriere-plan du menu */
-  }
-  .dropdowncontacter li a {
-    color: black; /* Couleur du texte du menu */
-  }
-  .dropdowncontacter li:hover {
-    background-color: rgb(2, 2, 167); /* Couleur d'arriere-plan du menu au survol */
-  }
-  .dropdowncontacter li:hover a {
-    color: black; /* Couleur du texte du menu au survol */
-  }
-  .dropdowncontacter ul li {
-    background-color: rgb(2, 2, 167); /* Couleur d'arriere-plan des sous-menu */
-  }
-  .dropdowncontacter ul li:hover {
-    background-color: rgb(2, 2, 167); /* Couleur d'arriere-plan des sous-menu au survol */
-  }
-  .dropdowncontacterul li a {
-    color: black; /* Couleur du texte des sous-menu */
-  }
-  .dropdowncontacter ul li:hover a {
-    color: #f00; /* Couleur du texte des sous-menu au survol */
-  } 
-
 
 .adresse{
     width: 25px;
     height: 25px;
+	
 }
 .tel{
     width: 25px;
@@ -1397,7 +920,4 @@ footer p {
 .mail {
     width: 30px;
     height: 25px;
-}
-.title{
-	margin-top: 0%;
 }
